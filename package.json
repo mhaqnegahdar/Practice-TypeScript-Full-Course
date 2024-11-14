@@ -1,0 +1,23 @@
+{
+  "name": "practice-typescript-full-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node",
+    "start": "nodemon",
+    "build": "tsc",
+    "start_build": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "https://github.com/mhaqnegahdar",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.2",
+    "typescript": "^5.6.2"
+  }
+}

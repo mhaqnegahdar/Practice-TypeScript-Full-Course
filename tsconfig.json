@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true
+    // in case of compiling to newer versions
+    // also use "type":"modules" in package.json
+    // "module": "ESNext",
+    // "moduleResolution": "node",
+    // "esModuleInterop": true
+  },
+  "include": ["src/**/*"]
+}
