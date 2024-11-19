@@ -8,6 +8,7 @@
  *
  */
 
+
 type Point2D__ = {
   x: number;
   y: number;
@@ -41,8 +42,28 @@ interface Point3D_ extends Point2D_ {
   z: number;
 }
 
+
 export const point3d: Point3D_ = {
   x: 0,
   y: 0,
   z: 0,
 };
+
+
+// Interface Merginh
+interface Point4D extends Point3D_ {}
+
+// w property was marged later
+interface Point4D {
+  w:number
+
+}
+
+
+export const point4d :Point4D = {
+  x:0,
+  y:0,
+  z:0,
+  w:0,
+
+}

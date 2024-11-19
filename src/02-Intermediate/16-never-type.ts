@@ -4,27 +4,34 @@ type Circle = {
   kind: "circle";
   size: number;
 };
-type Square = {
+export type Square = {
   kind: "square";
   size: number;
 };
-type Rectangle = {
+export type Rectangle = {
   kind: "rectangle";
   height: number;
   width: number;
 };
 
-type Shape = Circle | Square | Rectangle;
+export type Shape = Circle | Square | Rectangle;
 
 function calculateArea(shape: Shape) {
-  if (shape.kind == "circle") {
+  
+  switch(shape.kind){
+    case "circle":
     return Math.PI * shape.size ** 2;
-  } else if (shape.kind == "square") {
+
+    case "square":
     return shape.size ** 2;
-  } else if (shape.kind == "rectangle") {
+
+    case "rectangle":
     return shape.width * shape.height;
+
   }
 
+
+ 
   const _ensureAllCasesAreHandled: never = shape;
   return _ensureAllCasesAreHandled; // if you return type return type of function will be number if not it will be number | undefined
 }

@@ -1,4 +1,4 @@
-// ? Compile tiem only with no runtime impact
+// ? Compile time only with no runtime impact
 
 
 type Person3 = {

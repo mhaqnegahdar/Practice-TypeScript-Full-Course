@@ -1,5 +1,5 @@
-type Point2D = { x: number; y: number };
-type Point3D = { x: number; y: number; z: number };
+export type Point2D = { x: number; y: number };
+export type Point3D = { x: number; y: number; z: number };
 
 const takesPoint2D = (point: Point2D) => {};
 const takesPoint3D = (point: Point3D) => {};
