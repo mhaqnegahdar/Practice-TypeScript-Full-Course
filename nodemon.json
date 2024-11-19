@@ -1,8 +1,7 @@
 {
-  "watch": ["./src/**/*.ts"],
+  "watch": ["./src"],
   "ignore": ["node_modules"],
   "ext": "ts, js",
   "exec": "ts-node src/index.ts",
   "legacyWatch": true
-  
 }
